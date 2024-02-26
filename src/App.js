@@ -2,14 +2,14 @@ import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
-import Home from "./components/Home/Home";
-import Feature from "./components/Features/Feature";
-import Pricing from "./components/Pricing/Pricing";
-import Integration from "./components/Integration/Integration";
-import Solution from "./components/Solution/Solution";
-import FAQ from "./components/FAQ/FAQ";
-import Login from "./components/Login/Login";
-import Signup from "./components/Signup/Signup";
+import Home from "./Pages/Home/Home";
+import Feature from "./Pages/Features/Feature";
+import Pricing from "./Pages/Pricing/Pricing";
+import Integration from "./Pages/Integration/Integration";
+import Solution from "./Pages/Solution/Solution";
+import FAQ from "./Pages/FAQ/FAQ";
+import Login from "./Pages/Login/Login";
+import Signup from "./Pages/Signup/Signup";
 
 function App() {
   return (
