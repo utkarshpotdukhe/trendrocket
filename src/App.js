@@ -14,7 +14,6 @@ import Signup from "./Pages/Signup/Signup";
 function App() {
   return (
     <Router>
-      <Header />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/Feature" element={<Feature />} />
@@ -25,7 +24,6 @@ function App() {
         <Route path="/Login" element={<Login />} />
         <Route path="/Signup" element={<Signup />} />
       </Routes>
-      <Footer />
     </Router>
   );
 }
