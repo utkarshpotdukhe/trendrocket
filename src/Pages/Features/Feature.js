@@ -1,6 +1,7 @@
 import React from "react";
 import '../../../src/index.css';
-import './Feature.css'
+import './Feature.css';
+import './featureSlider';
 const Feature = () => {
   return (
     <>
@@ -952,149 +953,275 @@ const Feature = () => {
           </div>
         </div>
       </div>
+      
       <div className="feature-slider-section">
-        <div className="global-padding">
-          <div className="container-large">
-            <div className="container-medium">
-              <div className="feature-slider-main-wraper">
-                <div className="feature_slider-componant">
-                  <div className="feature-absloute-img-wraper">
-                    <img
-                      src="https://assets-global.website-files.com/623b203c1555087b0395f66e/64ff6084ecbc8ff6ffe12dfb_%E2%80%9C.png"
-                      loading="lazy"
-                      alt=""
-                      className="featurel-absloute-img"
-                    />
+        
+  <div className="global-padding">
+    <div className="container-large">
+      <div className="container-medium">
+        <div className="feature-slider-main-wraper">
+          <div className="feature_slider-componant">
+            <div className="feature-absloute-img-wraper">
+              <img
+                src="https://assets-global.website-files.com/623b203c1555087b0395f66e/64ff6084ecbc8ff6ffe12dfb_%E2%80%9C.png"
+                loading="lazy"
+                alt=""
+                className="featurel-absloute-img"
+                data-cmp-ab={2}
+                data-cmp-info={10}
+              />
+            </div>
+            <div className="feature-slider-wraper">
+              <div
+                data-delay={4000}
+                data-animation="slide"
+                className="feature-slider w-slider"
+                data-autoplay="false"
+                data-easing="ease"
+                data-hide-arrows="false"
+                data-disable-swipe="false"
+                data-autoplay-limit={0}
+                data-nav-spacing={3}
+                data-duration={500}
+                data-infinite="true"
+                role="region"
+                aria-label="carousel"
+              >
+                <div
+                  className="feature-mask w-slider-mask"
+                  id="w-slider-mask-0"
+                >
+                  <div
+                    className="feature-slide w-slide"
+                    aria-label="1 of 3"
+                    role="group"
+                    style={{
+                      transform: "translateX(0px)",
+                      opacity: 1,
+                      transition: "transform 500ms ease 0s"
+                    }}
+                  >
+                    <div className="feature-slider-content-wraper">
+                      <div className="testimonial-paragraph-wraper">
+                        <p className="feature-slide-paragraph">
+                          I found I was constantly jumping between platforms
+                          comparing data, trying to see what our assets our
+                          competitors were scaling. TrendRocket brings it all
+                          together, and I truly believe our company wouldn’t be
+                          competitive if we hadn’t started using it.
+                        </p>
+                      </div>
+                      <div className="feature-slide-img-wraper">
+                        <div className="author-title-wraper">
+                          <div className="pro-text-2">Rachael C</div>
+                          <div className="description-author">
+                            Brand Manager
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <div className="feature-slider-wraper">
+                  <div
+                    className="feature-slide w-slide"
+                    aria-label="2 of 3"
+                    role="group"
+                    style={{
+                      transform: "translateX(0px)",
+                      opacity: 1,
+                      transition: "transform 500ms ease 0s"
+                    }}
+                    aria-hidden="true"
+                  >
                     <div
-                      data-delay={4000}
-                      data-animation="slide"
-                      className="feature-slider w-slider"
-                      data-autoplay="false"
-                      data-easing="ease"
-                      data-hide-arrows="false"
-                      data-disable-swipe="false"
-                      data-autoplay-limit={0}
-                      data-nav-spacing={3}
-                      data-duration={500}
-                      data-infinite="true"
+                      className="feature-slider-content-wraper"
+                      aria-hidden="true"
                     >
-                      <div className="feature-mask w-slider-mask">
-                        <div className="feature-slide w-slide">
-                          <div className="feature-slider-content-wraper">
-                            <div className="testimonial-paragraph-wraper">
-                              <p className="feature-slide-paragraph">
-                                I found I was constantly jumping between
-                                platforms comparing data, trying to see what our
-                                assets our competitors were scaling. TrendRocket
-                                brings it all together, and I truly believe our
-                                company wouldn’t be competitive if we hadn’t
-                                started using it.
-                              </p>
-                            </div>
-                            <div className="feature-slide-img-wraper">
-                              <div className="author-title-wraper">
-                                <div className="pro-text-2">Rachael C</div>
-                                <div className="description-author">
-                                  Brand Manager
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="feature-slide w-slide">
-                          <div className="feature-slider-content-wraper">
-                            <div className="testimonial-paragraph-wraper">
-                              <p className="feature-slide-paragraph">
-                                The product information in TrendRocket has
-                                removed the guesswork when finding that next
-                                winning product. We have streamlined product
-                                sourcing workflows and improved productivity by
-                                at least 50%
-                              </p>
-                            </div>
-                            <div className="feature-slide-img-wraper">
-                              <img
-                                src="https://assets-global.website-files.com/623b203c1555087b0395f66e/6513dd79318595b799dfdaa3_avatar.png"
-                                loading="lazy"
-                                alt=""
-                                className="featurre-author-img"
-                              />
-                              <div className="author-title-wraper">
-                                <div className="pro-text-2">
-                                  <strong>Paddy K</strong>
-                                </div>
-                                <div className="description-author">
-                                  Brand Manager
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="feature-slide w-slide">
-                          <div className="feature-slider-content-wraper">
-                            <div className="testimonial-paragraph-wraper">
-                              <p className="feature-slide-paragraph">
-                                With the market constantly changing, TrendRocket
-                                is giving me the edge I need to stay ahead of
-                                the consumer and our competitors. We are able to
-                                find the next product our customers are going to
-                                fall in love with!
-                              </p>
-                            </div>
-                            <div className="feature-slide-img-wraper">
-                              <img
-                                src="https://assets-global.website-files.com/623b203c1555087b0395f66e/6513dd79318595b799dfdaa3_avatar.png"
-                                loading="lazy"
-                                alt=""
-                                className="featurre-author-img"
-                              />
-                              <div className="author-title-wraper">
-                                <div className="pro-text-2">
-                                  <strong>Daniel</strong>
-                                </div>
-                                <div className="description-author">
-                                  Brand Manager
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
+                      <div
+                        className="testimonial-paragraph-wraper"
+                        aria-hidden="true"
+                      >
+                        <p
+                          className="feature-slide-paragraph"
+                          aria-hidden="true"
+                        >
+                          The product information in TrendRocket has removed the
+                          guesswork when finding that next winning product. We
+                          have streamlined product sourcing workflows and
+                          improved productivity by at least 50%
+                        </p>
                       </div>
-                      <div className="feature_slider-left-arro w-slider-arrow-left">
+                      <div
+                        className="feature-slide-img-wraper"
+                        aria-hidden="true"
+                      >
                         <img
+                          src="https://assets-global.website-files.com/623b203c1555087b0395f66e/6513dd79318595b799dfdaa3_avatar.png"
                           loading="lazy"
-                          src="https://assets-global.website-files.com/623b203c1555087b0395f66e/64ff4f799dae270a6d62c55e_arrow-left.png"
                           alt=""
-                          className="link-blockarrow-img"
+                          className="featurre-author-img"
+                          data-cmp-ab={2}
+                          data-cmp-info={10}
+                          aria-hidden="true"
                         />
+                        <div className="author-title-wraper" aria-hidden="true">
+                          <div className="pro-text-2" aria-hidden="true">
+                            <strong aria-hidden="true">Paddy K</strong>
+                          </div>
+                          <div
+                            className="description-author"
+                            aria-hidden="true"
+                          >
+                            Brand Manager
+                          </div>
+                        </div>
                       </div>
-                      <div className="feature_slider-right-arro w-slider-arrow-right">
+                    </div>
+                  </div>
+                  <div
+                    className="feature-slide w-slide"
+                    aria-label="3 of 3"
+                    role="group"
+                    aria-hidden="true"
+                    style={{
+                      transform: "translateX(0px)",
+                      opacity: 1,
+                      transition: "transform 500ms ease 0s"
+                    }}
+                  >
+                    <div
+                      className="feature-slider-content-wraper"
+                      aria-hidden="true"
+                    >
+                      <div
+                        className="testimonial-paragraph-wraper"
+                        aria-hidden="true"
+                      >
+                        <p
+                          className="feature-slide-paragraph"
+                          aria-hidden="true"
+                        >
+                          With the market constantly changing, TrendRocket is
+                          giving me the edge I need to stay ahead of the
+                          consumer and our competitors. We are able to find the
+                          next product our customers are going to fall in love
+                          with!
+                        </p>
+                      </div>
+                      <div
+                        className="feature-slide-img-wraper"
+                        aria-hidden="true"
+                      >
                         <img
+                          src="https://assets-global.website-files.com/623b203c1555087b0395f66e/6513dd79318595b799dfdaa3_avatar.png"
                           loading="lazy"
-                          src="https://assets-global.website-files.com/623b203c1555087b0395f66e/64ff4fcb93f2cb6ffd81a336_arrow-left%20(1).png"
                           alt=""
-                          className="link-blockarrow-img"
+                          className="featurre-author-img"
+                          data-cmp-ab={2}
+                          data-cmp-info={10}
+                          aria-hidden="true"
                         />
+                        <div className="author-title-wraper" aria-hidden="true">
+                          <div className="pro-text-2" aria-hidden="true">
+                            <strong aria-hidden="true">Daniel</strong>
+                          </div>
+                          <div
+                            className="description-author"
+                            aria-hidden="true"
+                          >
+                            Brand Manager
+                          </div>
+                        </div>
                       </div>
-                      <div className="featurel-slider-nav w-slider-nav w-round" />
                     </div>
-                    <div className="w-embed">
-                      <style
-                        dangerouslySetInnerHTML={{
-                          __html:
-                            "\n    /* Default background image for non-active dots */\n    .w-slider-dot {\n        background-color: transparent;\n        background-image: url('https://assets-global.website-files.com/623b203c1555087b0395f66e/650095860d5989f51f2c825e_NON-ACTIVE.png');\n        background-size: cover; /* Adjust as needed */\n        width: 26px;\n        height: 26px;\n    }\n\n    /* Background image for active dots */\n    .w-slider-dot.w-active {\n        background-color: transparent;\n        background-image: url('https://assets-global.website-files.com/623b203c1555087b0395f66e/6500974e02dbf0d67bcf1c8b_NON-ACTIVE.png');\n        background-size: cover; /* Adjust as needed */\n    }\n"
-                        }}
-                      />
-                    </div>
+                  </div>
+                  <div
+                    aria-live="polite"
+                    aria-atomic="true"
+                    className="w-slider-aria-label"
+                    data-wf-ignore=""
+                  >
+                    Slide 1 of 3.
                   </div>
                 </div>
+                <div
+                  className="feature_slider-left-arro w-slider-arrow-left"
+                  role="button"
+                  tabIndex={0}
+                  aria-controls="w-slider-mask-0"
+                  aria-label="previous slide"
+                >
+                  <img
+                    loading="lazy"
+                    src="https://assets-global.website-files.com/623b203c1555087b0395f66e/64ff4f799dae270a6d62c55e_arrow-left.png"
+                    alt=""
+                    className="link-blockarrow-img"
+                    data-cmp-ab={2}
+                    data-cmp-info={10}
+                  />
+                </div>
+                <div
+                  className="feature_slider-right-arro w-slider-arrow-right"
+                  role="button"
+                  tabIndex={0}
+                  aria-controls="w-slider-mask-0"
+                  aria-label="next slide"
+                  style={{}}
+                >
+                  <img
+                    loading="lazy"
+                    src="https://assets-global.website-files.com/623b203c1555087b0395f66e/64ff4fcb93f2cb6ffd81a336_arrow-left%20(1).png"
+                    alt=""
+                    className="link-blockarrow-img"
+                    data-cmp-ab={2}
+                    data-cmp-info={10}
+                  />
+                </div>
+                <div className="featurel-slider-nav w-slider-nav w-round">
+                  <div
+                    className="w-slider-dot w-active"
+                    data-wf-ignore=""
+                    aria-label="Show slide 1 of 3"
+                    aria-pressed="true"
+                    role="button"
+                    tabIndex={0}
+                    style={{ marginLeft: 3, marginRight: 3 }}
+                  />
+                  <div
+                    className="w-slider-dot"
+                    data-wf-ignore=""
+                    aria-label="Show slide 2 of 3"
+                    aria-pressed="false"
+                    role="button"
+                    tabIndex={-1}
+                    style={{ marginLeft: 3, marginRight: 3 }}
+                  />
+                  <div
+                    className="w-slider-dot"
+                    data-wf-ignore=""
+                    aria-label="Show slide 3 of 3"
+                    aria-pressed="false"
+                    role="button"
+                    tabIndex={-1}
+                    style={{ marginLeft: 3, marginRight: 3 }}
+                  />
+                </div>
+              </div>
+              <div className="w-embed">
+                <style
+                  dangerouslySetInnerHTML={{
+                    __html:
+                      "\n    /* Default background image for non-active dots */\n    .w-slider-dot {\n        background-color: transparent;\n        background-image: url('https://assets-global.website-files.com/623b203c1555087b0395f66e/650095860d5989f51f2c825e_NON-ACTIVE.png');\n        background-size: cover; /* Adjust as needed */\n        width: 26px;\n        height: 26px;\n    }\n\n    /* Background image for active dots */\n    .w-slider-dot.w-active {\n        background-color: transparent;\n        background-image: url('https://assets-global.website-files.com/623b203c1555087b0395f66e/6500974e02dbf0d67bcf1c8b_NON-ACTIVE.png');\n        background-size: cover; /* Adjust as needed */\n    }\n"
+                  }}
+                />
               </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
+  </div>
+</div>
+
       <div className="bussines-section">
         <div className="global-padding">
           <div className="container-large">
