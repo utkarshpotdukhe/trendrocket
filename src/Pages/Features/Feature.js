@@ -993,6 +993,7 @@ const Feature = () => {
                 >
                   <div
                     className="feature-slide w-slide"
+                    data-slide-id={0}
                     aria-label="1 of 3"
                     role="group"
                     style={{
@@ -1023,6 +1024,7 @@ const Feature = () => {
                   </div>
                   <div
                     className="feature-slide w-slide"
+                    data-slide-id={1}
                     aria-label="2 of 3"
                     role="group"
                     style={{
@@ -1079,6 +1081,7 @@ const Feature = () => {
                   </div>
                   <div
                     className="feature-slide w-slide"
+                    data-slide-id={2}
                     aria-label="3 of 3"
                     role="group"
                     aria-hidden="true"

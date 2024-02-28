@@ -1,24 +1,23 @@
-const featureSlider = document.querySelector('.feature-slider');
-const slides = featureSlider.querySelectorAll('.feature-slide');
-const dots = featureSlider.querySelectorAll('.w-slider-dot');
-
-let currentSlide = 0;
-
-function goToSlide(slideIndex) {
-  slides.forEach((slide, index) => {
-    slide.style.transform = `translateX(${100 * (index - slideIndex)}%)`;
-    slide.style.transition = 'transform 500ms ease';
-
-    dots[index].setAttribute('aria-pressed', index === slideIndex);
-  });
-
-  currentSlide = slideIndex;
-}
+const slider = document.querySelector('.feature-slider');
+const dots = document.querySelectorAll('.w-slider-dot');
+const paragraphs = document.querySelectorAll('.feature-slide-paragraph');
 
 dots.forEach((dot, index) => {
   dot.addEventListener('click', () => {
-    goToSlide(index);
+    dots.forEach(d => d.classList.remove('w-active'));
+
+    dot.classList.add('w-active');
+
+    const totalSlides = dots.length;
+    slider.querySelector('.w-slider-aria-label').textContent = `Slide ${index + 1} of ${totalSlides}`;
+
+    
+    paragraphs.forEach((p, i) => {
+      if (i === index) {
+        p.classList.add('active');
+      } else {
+        p.classList.remove('active');
+      }
+    });
   });
 });
-
-goToSlide(currentSlide);
